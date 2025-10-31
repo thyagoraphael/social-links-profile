@@ -1,0 +1,90 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey900);
+  color: var(--white);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--grey800);
+  width: 34.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 1.2rem;
+}
+
+.profile img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.profile h1 {
+  font-size: 1.8rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.profile h3 {
+  font-size: 1.3rem;
+  color: var(--green);
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.links-social {
+  list-style: none;
+}
+
+.links-social li {
+  margin: 1.4rem 0;
+}
+
+.links-social a {
+  display: block;
+  padding: 1.4rem;
+  color: var(--white);
+  background-color: var(--grey700);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  transition: all 0.2s ease;
+}
+
+.links-social a:hover {
+  background-color: var(--green);
+  color: var(--grey900);
+}
